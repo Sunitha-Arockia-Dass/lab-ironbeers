@@ -1,0 +1,18 @@
+<div>
+    <ul class="details">
+    {{#each beers}}
+       <div class="details-style">
+        <div>
+        <li><img class="beer-img" src="{{image_url}}" alt="error"></li>
+        </div>
+        <div class="details-info">
+        <li><b>{{name}}</b> </li>
+        <li>{{tagline}} </li>
+        <li><b>Description:</b>{{description}} </li>
+        </div>
+        </div>
+        <hr>
+        <hr>
+    {{/each}}
+</ul>
+</div>
