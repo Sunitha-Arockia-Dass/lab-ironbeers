@@ -1,1 +1,52 @@
-RANDOMBEERS
+ {{!-- <div id="random-beer">
+    <ul class="details">
+    {{#each randomBeer}}
+       <div class="details-style">
+        <div>
+        <li><img class="beer-img" src="{{image_url}}" alt="error"></li>
+        </div>
+        <div class="details-info">
+        <li><b>{{name}}</b> </li>
+        <li class="tag">{{tagline}} </li>
+        <li>{{description}} </li>
+        <li><b>Food Pairing</b> 
+            <ul class="food-pairing">
+            
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+            </ul>
+        </li>
+        <li><b>Brewers Tips:<br> </b>{{brewers_tips}}</li>
+
+        </div>
+        </div>
+       {{/each}}
+</ul>
+</div>
+
+
+ 
+ --}}
+
+
+
+<div>
+{{> beerpartial beers=randomBeer}}
+ {{#each randomBeer}}
+ <ul class="details">
+     <div class="random-style">
+    <li><b>Food Pairing</b> 
+            <ul class="food-pairing">
+            
+            {{#each food_pairing}}
+            <li>{{this}}</li>
+            {{/each}}
+            </ul>
+        </li>
+        <li><b>Brewers Tips:<br> </b>{{brewers_tips}}</li>
+        </div>
+        </ul>
+        {{/each}}
+</div>
+

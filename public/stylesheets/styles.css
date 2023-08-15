@@ -15,11 +15,16 @@ font-family: Arial, Helvetica, sans-serif;
   justify-content: space-around;
   align-items: center;
   background-color: #2081c3;
-  height: 50px;
+  height: 45px;
 }
 .nav-bar a {
   color: white;
+  text-decoration: none;
+
 }
+/* .content{
+  height: 60%;
+} */
 .btn {
   display: flex;
   flex-direction: column;
@@ -43,29 +48,61 @@ font-family: Arial, Helvetica, sans-serif;
 footer {
   background-color: #0a2c42;
   color: white;
-  height: 45px;
+  height: 50px;
+  /* position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; */
+  margin-top: auto
 }
 footer p {
-  padding: 10px;
+  padding: 20px;
 }
 .beer-img{
   width:70px;
-  padding-right: 60px;
-  padding-top: 15px;
+  padding:15px 80px 0px 80px;
 }
 .details li{
   list-style: none;
 }
 .details{
+  margin-left: 50px;
   padding-left: 10px;
+  width:80%;
+}
+.details a{
+  text-decoration: none;
+
 }
 .details-style{
+  color: black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .details-info{
+  line-height: 1.5;
   width:80%;
-  font-size: 1.5em;
-  padding-bottom: 25px;
+  font-size: 1.2em;
+  padding: 25px 0px;
+  margin-bottom: 0px;
+}
+.tag{
+  opacity: 0.5;
+  padding: 20px 0px;
+}
+#random-beer .beer-img{
+width:80px;
+}
+
+.food-pairing li{
+margin-left: 60px;
+  list-style: disc;
+  
+}
+.random-style{
+  font-size: 1.2em;
+  margin-left:230px;
+  margin-bottom: 200px;
+  line-height: 1.5
 }

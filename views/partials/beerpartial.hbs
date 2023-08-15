@@ -1,19 +1,19 @@
-   {{!-- 
    <div>
     <ul class="details">
     {{#each beers}}
+       <a href="/beers/{{id}}">
        <div class="details-style">
         <div>
         <li><img class="beer-img" src="{{image_url}}" alt="error"></li>
         </div>
         <div class="details-info">
+        {{!--{{name}} <!-- Link to the beer's detail page --> --}}
         <li><b>{{name}}</b> </li>
         <li class="tag">{{tagline}} </li>
         <li>{{description}} </li>
         </div>
         </div>
-        <hr>
-        <hr>
+       </a>
     {{/each}}
 </ul>
 </div>  
@@ -21,8 +21,4 @@
 
  
 
- --}}
 
- 
-{{> beerpartial }}
-       

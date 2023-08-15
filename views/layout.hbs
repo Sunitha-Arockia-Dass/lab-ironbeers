@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/stylesheets/styles.css" />
   </head>
   <body>
+    <div id="page-wrapper">
 <div class="nav-bar">
     <a href="/">
         Home
@@ -19,10 +20,13 @@
         Random Beers
     </a>
 </div>
+     <div id="content"> <!-- Add id to the content area -->
+        {{{ body }}} 
+    </div>
     
-    {{{ body }}} 
     <footer>
         <p>Develop by IRONHACK ;)</p>
     </footer>
+    </div>
   </body>
 </html>
